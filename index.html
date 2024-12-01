@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-        <meta charset="UTF-8" />
-    </head>
-    <body>
 
-        <h1>This is a Heading</h1>
-        <p>This is a paragraph.</p>
-        ภาษาไทย
-    </body>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <table>
+
+        <h1>Workshop #HTML-FORM</h1>
+        <tr>
+            <form>
+                <label for="fname">ชื่อ</label>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">สกุล</label>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="dob">วัน/เดือน/ปีเกิด</label>
+                <input type="date" id="dob" name="dob"><br>
+
+                <label for="age">อายุ</label>
+                <input type="text" id="age" name="age"><br>
+
+                <label for="sex">เพศ</label>
+                <input type="radio" id="html" name="sex" value="ชาย">
+                <label for="html">ชาย</label>
+                <input type="radio" id="css" name="sex" value="หญิง">
+                <label for="css">หญิง</label><br>
+
+                <label for="image">รูป</label>
+                <input type="button" value="Choose File">
+                <label for="nofile"> No file chosen</label>
+                <br>
+
+                <label for="address">ที่อยู่ </label>
+                <textarea rows="4" cols="40"></textarea><br>
+
+
+                <label for="favoriteColor">สีที่ชอบ</label>
+                <select id="favoriteColor" name="favoriteColor">
+                    <option value="สีแดง">สีแดง</option>
+                    <option value="สีน้ำเงิน">สีน้ำเงิน</option>
+                    <option value="สีเขียว">สีเขียว</option>
+                    <option value="สีอื่นๆ">สีอื่นๆ</option>
+                </select><br><br>
+
+                <label>แนวเพลงที่ชอบ</label>
+                <input type="checkbox" id="lifeSong" name="musicType" value="เพื่อชีวิต">
+                <label for="lifeSong">เพื่อชีวิต</label>
+                <input type="checkbox" id="countrySong" name="musicType" value="ลูกทุ่ง">
+                <label for="countrySong">ลูกทุ่ง</label>
+                <input type="checkbox" id="otherSong" name="musicType" value="อื่นๆ">
+                <label for="otherSong">อื่นๆ</label><br><br>
+
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent">ยินยอมให้เก็บข้อมูล</label><br><br>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </tr>
+    
+
+    </table>
+
+</body>
+
 </html>
