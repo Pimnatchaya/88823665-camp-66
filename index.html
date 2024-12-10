@@ -10,11 +10,40 @@
 
 <body>
 
+    <style>
+        /* กำหนดพื้นหลังเริ่มต้นของฟอร์ม */
+        form {
+            background-color: #f0f0f0;
+            /* สีพื้นหลังปกติ */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* เมื่อชี้เมาส์ไปที่ฟอร์ม (hover) */
+        form:hover {
+            background-color: #70bfff;
+            /* สีพื้นหลังเมื่อ hover */
+        }
+
+        /* การเปลี่ยนแปลงสีพื้นหลังในปุ่มเมื่อ hover */
+        button:hover {
+            background-color: #f679ee;
+            /* เปลี่ยนเป็นสีเขียว */
+            color: rgb(0, 0, 0);
+            /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+        }
+
+        /* การเปลี่ยนแปลงสีพื้นหลังใน input field เมื่อ hover */
+        input[type="text"]:hover {
+            background-color: #ecd4ff;
+            /* เปลี่ยนสีพื้นหลังเป็นเขียวอ่อน */
+        }
+    </style>
     <table>
 
-        
+
         <h1 style="background-color:rgb(198, 164, 252);">Workshop #HTML-FORM</h1>
-        
+
         <tr>
             <form>
                 <label for="fname">ชื่อ</label>
