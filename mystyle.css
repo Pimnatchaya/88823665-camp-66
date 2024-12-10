@@ -1,0 +1,39 @@
+p {
+    font-size: 20pt;
+    color: red;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.class-p {
+    color: #40d87fc4;
+}
+
+#id-p {
+    color: black;
+}
+
+/*p {
+    border: 5px solid rgb(132, 0, 255);
+}*/
+
+/*h1{
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 5px;
+    border-top-style: dotted;
+    border-color: red;
+    margin-top: ;
+}*/
+/*p {
+    border: 5px solid red;
+}*/
+
+h1 {
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 5px;
+    border-top-style: dotted;
+}
+body {
+    background-color: lightblue;
+}
