@@ -2,129 +2,193 @@
 <html>
 
 <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <title>Page <Title></Title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="mystyle.css" rel="stylesheet"/>
 </head>
 
 <body>
+  <form>
+  <div class="container mt-3">
+    
+      <div class="mb-3 row">
+        <div class="col-4">
+          <label for="Fname" class="form-label">ชื่อ</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="ชื่อ" aria-label="First name">
+        </div>
+      </div>
+  </div>
 
-    <style>
-        /* กำหนดพื้นหลังเริ่มต้นของฟอร์ม */
-        form {
-            background-color: #f0f0f0;
-            /* สีพื้นหลังปกติ */
-            padding: 20px;
-            border-radius: 8px;
-        }
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="Lname" class="form-label">นามสกุล</label>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" aria-label="last name">
+      </div>
+    </div>
+  </div>
 
-        /* เมื่อชี้เมาส์ไปที่ฟอร์ม (hover) */
-        form:hover {
-            background-color: #70bfff;
-            /* สีพื้นหลังเมื่อ hover */
-        }
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="date" class="form-label">วัน/เดือน/ปี</label>
+      </div>
+      <div class="col">
+        <input type="date" class="form-control" aria-label="date">
+      </div>
+    </div>
+  </div>
 
-        /* การเปลี่ยนแปลงสีพื้นหลังในปุ่มเมื่อ hover */
-        button:hover {
-            background-color: #f679ee;
-            /* เปลี่ยนเป็นสีเขียว */
-            color: rgb(0, 0, 0);
-            /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
-        }
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="age" class="form-label">อายุ</label>
+      </div>
+      <div class="col">
+        <input type="number" class="form-control" aria-label="age">
+      </div>
+    </div>
+  </div>
 
-        /* การเปลี่ยนแปลงสีพื้นหลังใน input field เมื่อ hover */
-        input[type="text"]:hover {
-            background-color: #ecd4ff;
-            /* เปลี่ยนสีพื้นหลังเป็นเขียวอ่อน */
-        }
-    </style>
-    <table>
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="gender" class="form-label">เพศ</label>
+      </div>
+      <div class="col">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male">
+          <label class="form-check-label" for="male">
+            ชาย
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="female" checked>
+          <label class="form-check-label" for="female">
+            หญิง
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="inputEmail4" class="form-label">รูป</label>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+          <input class="form-control" type="file" id="formFile">
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <h1 style="background-color:rgb(198, 164, 252);">Workshop #HTML-FORM</h1>
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="address" class="form-label">ที่อยู่</label>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+          <textarea class="form-control" id="address" rows="4"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
-        <tr>
-            <form>
-                <label for="fname">ชื่อ</label>
-                <input type="text" id="fname" name="fname"><br>
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="FavColor" class="form-label">สีที่ชอบ</label>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+          <select class="form-select" aria-label="FavColor">
+            <option value="1">สีแดง</option>
+            <option value="2">สีฟ้า</option>
+            <option value="3">สีเหลือง</option>
+            <option value="4">สีม่วง</option>
+            <option value="5">สีเขียว</option>
+            <option value="6">สีชมพู</option>
+            <option value="7">สีดำ</option>
+            <option value="8">สีขาว</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
-                <label for="lname">สกุล</label>
-                <input type="text" id="lname" name="lname"><br>
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+        <label for="music" class="form-label">เพลงที่ชอบ</label>
+      </div>
+      <div class="col">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="m1">
+          <label class="form-check-label" for="m1">
+            เพื่อชีวิต
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="m2" checked>
+          <label class="form-check-label" for="m2">
+            ลูกทุ่ง
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="other" checked>
+          <label class="form-check-label" for="other">
+            อื่นๆ
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
-                <label for="dob">วัน/เดือน/ปีเกิด</label>
-                <input type="date" id="dob" name="dob"><br>
+  <div class="container mt-3">
+    <div class="mb-3 row">
+      <div class="col-4">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" name="accept" id="m1">
+        <label class="form-check-label" for="m1">
+          ยืนยันให้เก็บข้อมูล
+        </label>
+      </div>
+    </div>
+  </div>
 
-                <label for="age">อายุ</label>
-                <input type="text" id="age" name="age"><br>
-
-                <label for="sex">เพศ</label>
-                <input type="radio" id="html" name="sex" value="ชาย">
-                <label for="html">ชาย</label>
-                <input type="radio" id="css" name="sex" value="หญิง">
-                <label for="css">หญิง</label><br>
-
-                <label for="image">รูป</label>
-                <input type="button" value="Choose File">
-                <label for="nofile"> No file chosen</label>
-                <br>
-
-                <label for="address">ที่อยู่ </label>
-                <textarea rows="4" cols="40"></textarea><br>
-
-
-                <label for="favoriteColor">สีที่ชอบ</label>
-                <select id="favoriteColor" name="favoriteColor">
-                    <option value="สีแดง">สีแดง</option>
-                    <option value="สีน้ำเงิน">สีน้ำเงิน</option>
-                    <option value="สีเขียว">สีเขียว</option>
-                    <option value="สีอื่นๆ">สีอื่นๆ</option>
-                </select><br><br>
-
-                <label>แนวเพลงที่ชอบ</label>
-                <input type="checkbox" id="lifeSong" name="musicType" value="เพื่อชีวิต">
-                <label for="lifeSong">เพื่อชีวิต</label>
-                <input type="checkbox" id="countrySong" name="musicType" value="ลูกทุ่ง">
-                <label for="countrySong">ลูกทุ่ง</label>
-                <input type="checkbox" id="otherSong" name="musicType" value="อื่นๆ">
-                <label for="otherSong">อื่นๆ</label><br><br>
-
-                <input type="checkbox" id="consent" name="consent">
-                <label for="consent">ยินยอมให้เก็บข้อมูล</label><br><br>
-
-                <button type="reset">Reset</button>
-                <button type="submit">Submit</button>
-            </form>
-        </tr>
-
-
-    </table>
-
-
-    <style>
-        /*sytle internal*/
-        h1,
-        test {
-            font-size: 18pt;
-        }
-
-        h1 {
-            color: red;
-        }
-
-        test {
-            color: green;
-        }
-    </style>
+      <div class="container mt-3">
+        <div class="mb-3 row">
+          <div class="col-10">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+          <div class="col">
+            <div class="form-check">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </form>
+  
 </body>
-<!--<h1>This is a Heading</h1>
-<h1 style="color: blue;">This is inline style</h1>
-<p>This is a paragraph.</p>
-ภาษาไทย เว้นวรรค
-<test>ทดสอบภาษาไทย</test>
-<p class="class-p">this is class</p>
-<p id="id-p">this is id</p>
-<p clsss="id-p" id="class-p">id and class</p>-->
-<h1:hover></h1:hover>
 
 </html>
