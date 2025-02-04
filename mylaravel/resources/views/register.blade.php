@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="register-page" style="background-color:rgb(206, 216, 255)">
+<div class="register-page" style="background-color:rgb(255, 240, 245)">
     <div class="register-box">
         <div class="register-logo">
           <a href="../index2.html"><b>Admin</b>LTE</a>
@@ -10,18 +10,18 @@
         <div class="card">
           <div class="card-body register-card-body">
             <p class="register-box-msg">Register a new membership</p>
-            <form action="{{ url('/register') }}" method="post">
+            <form action="{{ url('/register') }}" onsubmit="return clickme()" method="post">
                 @csrf
               <div class="input-group mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Full Name" />
+                <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" />
                 <div class="input-group-text"><span class="bi bi-person"></span></div>
               </div>
               <div class="input-group mb-3">
-                <input type="email" name="email" class="form-control" placeholder="Email" />
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" />
                 <div class="input-group-text"><span class="bi bi-envelope"></span></div>
               </div>
               <div class="input-group mb-3">
-                <input type="password" name="password" class="form-control" placeholder="Password" />
+                <input type="password" name="password" id="pass" class="form-control" placeholder="Password" />
                 <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
               </div>
               <!--begin::Row-->
@@ -44,15 +44,7 @@
               </div>
               <!--end::Row-->
             </form>
-            <div class="social-auth-links text-center mb-3 d-grid gap-2">
-              <p>- OR -</p>
-              <a href="#" class="btn btn-primary">
-                <i class="bi bi-facebook me-2"></i> Sign in using Facebook
-              </a>
-              <a href="#" class="btn btn-danger">
-                <i class="bi bi-google me-2"></i> Sign in using Google+
-              </a>
-            </div>
+            
             <!-- /.social-auth-links -->
             <p class="mb-0">
               <a href="login.html" class="text-center"> I already have a membership </a>
@@ -62,4 +54,45 @@
         </div>
       </div>
 </div>
+@endsection
+
+@section('scripts')
+<script>
+  console.log("Hello World!")
+  
+</script>
+<script>
+  //aleart("Hello World!")
+  let myvel
+  var myvel2
+  const PI=3.14
+  pi = 2
+  console.log(PI, pi)
+
+  let myarry = [];
+   myarry = Array()
+
+  myarry[0] = 1
+  myarry["1"] = 2
+  myarry.push(3)
+  myarry.push(4)
+  console.log(myarry)
+  myarry.pop()
+  console.log(myarry)
+  for(a=1; a< 10; a++){
+    console.log(a);
+  }
+  function clickme(){
+    let name = document.getElementById('name');
+        name.value = "new test"
+        name = $('#name').val("new with jquery")
+        $('#name').addclass('is-invalid') //error
+        $('#name').addclass(is-valid) //ok
+       
+        return false;
+  }
+  $(document).ready(function(){
+    // alert("Hello World")
+  })
+</script>
 @endsection
