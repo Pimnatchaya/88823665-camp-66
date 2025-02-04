@@ -1,17 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 class MyController extends Controller
 {
-    private function myprivite(){
-        return 1;
-    }
-    function myfunction(Request $req, $var1=""){
-        $data['myinput'] = $req->input('myinput');
-        $data['myvalue'] = $var1;
-        return view('myview', $data);
+    //
+    function myfunction( Request $request){
+        $input = $request->input('number',1);
+        $multiplication_table = [];
+        for ($i = 1; $i <= 12; $i++) {
+        $multiplication_table[] = $input*$i;   
+        }
+    
+        return view('myview',$multiplication_table, ['number' => $input, 'multiplication_table' => $multiplication_table]);
     }
 }
