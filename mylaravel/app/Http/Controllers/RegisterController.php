@@ -18,7 +18,7 @@ class RegisterController extends Controller
         $obj_user->name = $req->input('name');
         $obj_user->email = $req->email;
         $obj_user->password = $req->password;
-        $obj_user->save();
+        //$obj_user->save();
         return redirect('/users');
     }
 }

@@ -4,6 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>AdminLTE 4 | Login Page</title>
+    
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="AdminLTE 4 | Login Page" />
@@ -52,10 +53,9 @@
   <!--begin::Body-->
   <body class="bg-body-secondary">
     @yield('content')
-    <!--begin::Third Party Plugin(OverlayScrollbars)-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-    crossorigin="anonymous"></script>
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--begin::Third Party Plugin(OverlayScrollbars)-->
     <script
       src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
       integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
@@ -95,6 +95,7 @@
           });
         }
       });
+      
     </script>
     <!--end::OverlayScrollbars Configure-->
     <!--end::Script-->
