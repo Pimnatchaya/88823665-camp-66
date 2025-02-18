@@ -22,6 +22,8 @@ Route::post("/mycontroller/{id?}",
 
 Route::get('/login',
     [LoginController::class, 'index']);
+Route::post('/login',
+    [LoginController::class, 'login']);
 Route::get('/register',
     [RegisterController::class, 'index']);
 Route::post('/register',
@@ -40,8 +42,8 @@ Route::post('/mycontroller/{id?}',
     Route::get('/users',
     [UserController::class, 'index']);
 Route::get('/user/{id}',
-[UserController::class, 'edit']);
+    [UserController::class, 'edit']);
 Route::put('/user',
-[UserController::class, 'edit_action']);
+    [UserController::class, 'edit_action']);
 Route::delete('/user',
-[UserController::class, 'delete']);
+    [UserController::class, 'delete']);
