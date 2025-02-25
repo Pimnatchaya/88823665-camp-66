@@ -64,3 +64,5 @@ Route::middleware([CheckLogin::class])->group(function(){
     Route::get('/product', [ProductController::class, 'index']);
     Route::post('/product', [ProductController::class, 'add_product']);
 
+
+});
